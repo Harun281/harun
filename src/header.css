@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+.nav{
+    width: inherit;
+    height: max-content;
+    background-color: inherit;
+    overflow: hidden;
+}
+.nav-hide{
+    width: inherit;
+    height: auto;
+    background-color: rgb(208, 232, 238);
+
+}
+.fixed-nav{
+    position: fixed;
+    z-index: 100;
+    transition: top 1s;
+    background-color: rgb(208, 232, 238);
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: inherit;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    font-size: 1.5rem;
+    align-self: flex-end;
+    transition: all 0.3s linear;
+}
+.nav-items-hide{
+    display: none;
+}
+.nav-items a{
+    padding: 10px 50px 10px 10px;
+    text-decoration: none;
+    align-self: flex-end;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.logo span, .logo a{
+    padding: 10px -0px 10px 10px;
+}
+.logo a, .logo a:visited{
+    text-decoration: none;
+    color: initial;
+}
+.headernav a:not(.logo a){
+    text-decoration: none;
+
+}
+.headernav a:hover{
+    text-decoration: underline;
+}
+.headernav a:visited{
+    text-decoration: none;
+    color: initial;
+}
+.headernav{
+    font-family: 'Cinzel', serif;
+}
+
+@media screen and (min-width: 720px){
+    .headernav{
+        width: 100%;
+    }
+    .nav{
+        height: auto;
+        z-index: 1000;
+        display: block;
+
+    }
+    .fixed-nav{
+        background-color: white;
+    }
+    .logo{
+        display: block;
+    }
+    .nav-items-hide{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 1.5rem;
+        margin-top: -30px;
+        padding-right: -30px;
+        margin-left: 20%;
+        align-self: flex-end;
+    }
+    .nav-items-hide a{
+        padding: 5px 10px 10px 10px;
+        text-decoration: none;
+        color: inherit;
+    }
+    .nav-items-hide a:hover{
+        color: darkblue;
+    }
+
+}
