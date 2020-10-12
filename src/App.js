@@ -8,7 +8,7 @@ import Header from './header';
 import Projects from './projects';
 import Stack from './stack';
 import Twitter from './twitter';
-import './app.css'
+import './App.css'
 import './header.css';
 
 

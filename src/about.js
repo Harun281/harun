@@ -1,27 +1,40 @@
 import React from 'react';
 
-
+//utils
+const about = [
+    `
+    My name is Harun Muriiki, born in 1997 as third born in our family. 
+    My childhood had its measure of challenges and good memories to remember. 
+    As a kid, I always wanted to be a pilot. 
+    The idea of boarding leave alone flying planes fascinated me. I guess it still does 😊.
+    `,
+    `
+    My passion is coming up with tangible solutions to solve problems in society. 
+    Technology itself is a powerful tool that can be used to solve both current and future problems. 
+    Therefore, I use my knowledge as a web developer to put forward reliable, efficient 
+    and affordable web applications that meet customer and community requirements.
+    `,
+    `
+    Aside from web development, I love acquiring new knowledge and being up-to-date with current global trends. 
+    When not coding, am either reading a book, going through blogs, or perusing my twitter feed (twitter is bae 😊). 
+    Blogging is also part of my leisure; I believe learning is two-way traffic (by receiving and giving).
+    `,
+    `
+    Well, I’m also in BTC trading and part-time freelancing jobs. 
+    I’ve faith in the future of bitcoin as leading cryptocurrency and working remotely as the ultimate job space.
+    `
+];
 function Brief(){
+
     return(
         <div className="brief">
-            <p>
-            Lorem ipsum is so ubiquitous because it is so versatile. 
-            Select how many paragraphs you want, copy, paste, 
-            and break the lines wherever it is convenient. 
-            Real copy doesn't work that way.
-            </p>
-            <p>
-            Lorem ipsum is so ubiquitous because it is so versatile. 
-            Select how many paragraphs you want, copy, paste, 
-            and break the lines wherever it is convenient. 
-            Real copy doesn't work that way.
-            </p>
-            <p>
-            Lorem ipsum is so ubiquitous because it is so versatile. 
-            Select how many paragraphs you want, copy, paste, 
-            and break the lines wherever it is convenient. 
-            Real copy doesn't work that way.
-            </p>
+            {
+                about.map((value,index) =>{
+                    return(
+                        <p key={index}>{value}</p>
+                    );
+                })
+            }
         </div>
     );
 }
@@ -32,9 +45,9 @@ function Interests(){
             <h5>Interested In</h5>
             <ul>
                 <li>AI</li>
-                <li>Enterpreneur</li>
-                <li>AI</li>
-                <li>Enterpreneur</li>
+                <li>Flutter</li>
+                <li>Blogging</li>
+                <li>BTC</li>
             </ul>
         </div>
     );
