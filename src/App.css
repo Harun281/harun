@@ -127,6 +127,18 @@ h6{
     margin-top: 10px;
     padding-bottom: 10px;
 }
+.resume button{
+    margin-top: 5px;
+    margin-left: 5%;
+    background-color: lightgreen;
+    font-family: 'Fredericka the Great', cursive;
+    padding: 5px 5px 5px 5px;
+    outline-style: none;
+    border: none;
+    width: auto;
+    border-radius: 5%;
+    outline: none;
+}
 .resume h6{
     margin-bottom: -10px;
 }
@@ -134,11 +146,11 @@ h6{
     font-family: inherit;
     text-decoration: lightgreen underline;
 }
-.resume a:hover{
-    font-size: medium;
-}
 .resume a:visited{
     color: initial;
+}
+.resume-heads{
+    font-family: 'Cormorant SC', serif;
 }
 .projects{
     font-family: 'Cormorant SC', serif;
@@ -175,10 +187,6 @@ h6{
     padding: 10px 10px 10px 10px;
 }
 
-.resume p, .blog p{
-    font-family: 'Cormorant SC', serif;
-}
-
 form{
     display: flex;
     width: 60%;
@@ -208,7 +216,7 @@ form button{
     border-radius: 5%;
     outline: none;
 }
-form button:hover, .project-item button:hover{
+form button:hover, .project-item button:hover,.resume button:hover{
     background-color: lightblue;
 }
 .twitter h5{

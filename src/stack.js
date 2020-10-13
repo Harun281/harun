@@ -12,33 +12,32 @@ import node from './icons/node.png';
 
 
 function Resume(){
+    const viewCV = (e) =>{
+        alert('Page not available!');
+    }
     return(
         <div className="resume">
         <h5><FaUserGraduate /> Education</h5>
         <div>
             <h6><FaUniversity/> Moi University, Kenya</h6>
-            <p><FaCalendarMinus/> 2017 - Present</p>
-            <p>Bsc. Computer Science</p>
+            <p className="resume-heads" ><FaCalendarMinus/> 2017 - Present</p>
+            <p className="resume-heads" >Bsc. Computer Science</p>
             <p>
-            Lorem ipsum is so ubiquitous because it is so versatile. 
-            Select how many paragraphs you want, copy, paste, 
-            and break the lines wherever it is convenient. 
-            Real copy doesn't work that way.
+                I’m currently an undergraduate student at 
+                <a href="https://www.mu.ac.ke/" target ="blank" rel="noopener nofollow" > Moi University</a>, 
+                Eldoret, Kenya. <br/>Expected graduation year: 2021
             </p>
-            <a href="https://www.mu.ac.ke/" target ="blank" rel="noopener nofollow" >Check school site</a>
         </div>
         <div>
-            <h6><FaCertificate /> ABC Secondary School</h6>
-            <p><FaCalendarCheck/> 2013 - 2016</p>
-            <p>Kenya Certificate of Secondary Education</p>
+            <h6><FaCertificate /> ABC Boys' High School</h6>
+            <p className="resume-heads"><FaCalendarCheck/> 2013 - 2016</p>
+            <p className="resume-heads">Kenya Certificate of Secondary Education</p>
             <p>
-            Lorem ipsum is so ubiquitous because it is so versatile. 
-            Select how many paragraphs you want, copy, paste, 
-            and break the lines wherever it is convenient. 
-            Real copy doesn't work that way.
+            Completed four-year senior school studies at <a href="/#" >Abothuguchi</a> (ABC) Boys’ High, Meru, Kenya.
+            <br/>Grade score: B+
             </p>
-            <a href="/#" >Check school site</a>
         </div>
+        <button onClick={viewCV} >View/download my Resume</button>
     </div>
     );
 }
