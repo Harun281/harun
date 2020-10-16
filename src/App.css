@@ -167,7 +167,11 @@ h6{
     font-size: 1em;
     margin-bottom: 0px;
     margin-top: 0px;
-    font-weight: bold;
+    font-weight: normal;
+}
+.project-item p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(88, 88, 82);
 }
 .project-item button{
     align-self: flex-end;
@@ -204,6 +208,7 @@ form input, form textarea{
     margin-top: 10px;
     border-radius: 5%;
     background-color: inherit;
+    outline: none;
 }
 form button{
     align-self: flex-end;

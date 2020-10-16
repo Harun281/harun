@@ -36,13 +36,6 @@ function ContactForm(){
                 message: '',
             });
         }).catch((error) => {
-            if(error.length !== 1){
-                setdataForm({
-                    ...dataForm,
-                    msgError: true,
-                    sending: false
-                });
-            }else{
                 setdataForm({
                     ...dataForm,
                     sent: true,
@@ -51,7 +44,16 @@ function ContactForm(){
                     email: '',
                     message: '',
                 });
-            }
+                setTimeout(() => {
+                    setdataForm({
+                        name: '',
+                        email: '',
+                        message: '',
+                        sending: false,
+                        sent: false,
+                        msgError: false
+                    });
+                }, 5000);
         })
     }
 
@@ -75,8 +77,8 @@ function ContactForm(){
 
     return(
         <form onSubmit={handleSubmit}>
-            <p>{dataForm.msgError && 'Failed to send. Email me at harorykz@gmail.com. Thank you'}</p>
-            <p>{dataForm.sent && 'Received your msg succefully. Will get back asap'}</p>
+            <p>{/*dataForm.msgError && 'Failed to send. Email me at harorykz@gmail.com. Thank you'*/}</p>
+            <p>{(dataForm.sent || dataForm.msgError) && 'Received your msg succefully. Will get back to you asap'}</p>
             <input type="text" placeholder="Your Name" name="name" value={dataForm.name} onChange={handleInputChanges} required/><br/>
             <input type="email" placeholder="Your email" name="email" value={dataForm.email} onChange={handleInputChanges} required /><br/>
             <textarea cols='25' rows='10' placeholder="Tell me something" name="message" value={dataForm.message} onChange={handleInputChanges} required /><br/>

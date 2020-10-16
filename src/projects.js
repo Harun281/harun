@@ -3,24 +3,26 @@ import {BsBriefcaseFill} from 'react-icons/bs';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import portfolio from './images/portfolio.PNG';
+import portfolio from './images/port.PNG';
+import calculator from './images/reactCalc.PNG';
+import dataViewer from './images/dataviewer.PNG';
+import abc from './images/abc.jpg';
 
 
 function Portfolio(){
     return(
         <div className="project-item">
             <BsBriefcaseFill/>
-            <h6>Portfolio</h6>
+            <h6>Portfolio Site</h6>
             <p>
-            Lorem ipsum is so ubiquitous because it is so versatile. 
-            Select how many paragraphs you want, copy, paste, 
-            and break the lines wherever it is convenient. 
-            Real copy doesn't work that way.
+                This is the personal portfolio you're currently browsing. 
+                It created in React embracing the new react-hooks-API, 
+                exclusively using functional components rather than class components.
             </p>
             <div id="embed">
                 <img width='inherit' height="150px" src={portfolio} alt="portfolio" />
             </div>
-            <button><a href="https://harun281.github.io/muriiki/">Check It</a></button>
+            <button><a href="/">Check It</a></button>
         </div>
     );
 }
@@ -28,17 +30,16 @@ function SeniorSchool(){
     return(
     <div className="project-item">
         <BsBriefcaseFill/>
-        <h6> School</h6>
+        <h6>School Website</h6>
         <p>
-        Lorem ipsum is so ubiquitous because it is so versatile. 
-        Select how many paragraphs you want, copy, paste, 
-        and break the lines wherever it is convenient. 
-        Real copy doesn't work that way.
+            Abothuguchi.co.ke is a static site based on HTML, CSS, and simple JavaScript. 
+            The site's purpose is to show important information to both parents and students. 
+            A student portal module is to be added.
         </p>
         <div id="embed">
-                <img width='inherit' height="150px" src={portfolio} alt="portfolio" />
+                <img width='inherit' height="150px" src={abc} alt="ABC Boys" />
         </div>
-        <button><a href="https://harun281.github.io/muriiki/">Check It</a></button>
+        <button><a href="https://github.com/Harun281/student_ims" target="_blank" rel="noopener noreferrer" >Check It</a></button>
     </div>
     );
 }
@@ -46,36 +47,35 @@ function DataViewer(){
     return(
     <div className="project-item">
         <BsBriefcaseFill/>
-        <h6>DataViewer</h6>
+        <h6>Basic React Calculator</h6>
         <p>
-        Lorem ipsum is so ubiquitous because it is so versatile. 
-        Select how many paragraphs you want, copy, paste, 
-        and break the lines wherever it is convenient. 
-        Real copy doesn't work that way.
+        This is a simple arithmetic calculator built using react class components and mathJS library. 
+        You would want to check it.
         </p>
         <div id="embed">
-                <img width='inherit' height="150px" src={portfolio} alt="portfolio" />
+                <img width='inherit' height="150px" src={calculator} alt="portfolio" />
         </div>
-        <button><a href="https://harun281.github.io/muriiki/">Check It</a></button>
+        <button><a href="https://basic-react-calculator.netlify.app/" target="_blank" rel="noopener noreferrer"  >Check It</a></button>
     </div>
     );
 }
 function Tembea(){
+    const restricted = ()=>{
+        alert('unfortunately the app access is restricted by the client!');
+    }
     return(
     <div className="project-item">
         <BsBriefcaseFill/>
-        <h6> Tembea</h6>
+        <h6>DataViewer</h6>
         <p>
-        Lorem ipsum is so ubiquitous because it is so versatile. 
-        Select how many paragraphs you want, copy, paste, 
-        and break the lines wherever it is convenient. 
-        Real copy doesn't work that way.
+        Data viewer is a single-page application that can write, access, and update data in the database. 
+        The backed language is PHP, and it using the MySQL database.
         </p>
         <div id="embed">
-                <img width='inherit' height="150px" src={portfolio} alt="portfolio" />
+                <img width='inherit' height="150px" src={dataViewer} alt="portfolio" />
         </div>
         
-        <button><a href="https://harun281.github.io/muriiki/">Check It</a></button>
+        <button><a href="/#projects" onClick={restricted}>Check It</a></button>
     </div>
     );
 }

@@ -16,12 +16,12 @@ const about = [
     `,
     `
     Aside from web development, I love acquiring new knowledge and being up-to-date with current global trends. 
-    When not coding, am either reading a book, going through blogs, or perusing my twitter feed (twitter is bae 😊). 
-    Blogging is also part of my leisure; I believe learning is two-way traffic (by receiving and giving).
+    When not coding, am either reading a book, going through blogs, or perusing my Twitter feed (Twitter is bae 😊). 
+    Blogging too can't be excluded when it comes to Harun; I believe learning is two-way traffic (by receiving and giving).
     `,
     `
     Well, I’m also in BTC trading and part-time freelancing jobs. 
-    I’ve faith in the future of bitcoin as leading cryptocurrency and working remotely as the ultimate job space.
+    I've faith in Bitcoin's future as a leading cryptocurrency and working remotely as the ultimate job space.
     `
 ];
 function Brief(){
