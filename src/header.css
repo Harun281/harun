@@ -65,6 +65,12 @@
 .headernav{
     font-family: 'Cinzel', serif;
 }
+a{
+    color: inherit;
+}
+a:hover{
+    color: blue;
+}
 
 @media screen and (min-width: 720px){
     .headernav{
