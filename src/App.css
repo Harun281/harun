@@ -79,6 +79,7 @@ h6{
     display: flex;
     align-self: center;
     margin-top: -10px;
+    font-size: 50px;
 }
 #social a{
     align-self:'center';
@@ -242,14 +243,6 @@ form button:hover, .project-item button:hover,.resume button:hover{
 }
 .footer a:hover{
     font-size: 40px;
-}
-@keyframes animateFooter{
-    from{color: orange;}
-    to{ color: green; font-size: 50px;}
-}
-.footer-animate{
-    animation: animateFooter 5s infinite;
-    font-size: 30px;
 }
 @media screen and (min-width: 720px){
     /*header*/

@@ -24,7 +24,7 @@ function Resume(){
             <p className="resume-heads" >Bsc. Computer Science</p>
             <p>
                 I’m currently an undergraduate student at 
-                <a href="https://www.mu.ac.ke/" target ="blank" rel="noopener nofollow" > Moi University</a>, 
+                <a href="https://www.mu.ac.ke/" target ="_blank" rel="noopener noreferrer"> Moi University</a>, 
                 Eldoret, Kenya. <br/>Expected graduation year: 2021
             </p>
         </div>
