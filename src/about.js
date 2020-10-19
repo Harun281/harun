@@ -3,7 +3,7 @@ import React from 'react';
 //utils
 const about = [
     `
-    My name is Harun Muriiki, born in 1997 as third born in our family. 
+    My name is Harun Muriiki, born in the late 90s as third born in our family. 
     My childhood had its measure of challenges and good memories to remember. 
     As a kid, I always wanted to be a pilot. 
     The idea of boarding leave alone flying planes fascinated me. I guess it still does 😊.
